@@ -20,6 +20,6 @@ from django.urls import path
 from proxy import views as proxy_views
 
 urlpatterns = [
-    # path('djangoadmin/', admin.site.urls),
+    path('djangoadmin/', admin.site.urls),
     url(r'.*', proxy_views.index),
 ]

@@ -83,11 +83,14 @@ USE_L10N = True
 USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
+STATIC_ROOT = Path(BASE_DIR).joinpath('static')
+MEDIA_ROOT = Path(BASE_DIR).joinpath('media')
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MAILER_LITE_API_KEY = str(os.getenv('MAILER_LITE_API_KEY', None))
 DEBUG = str(os.getenv('DEBUG', True))
 API_HOST = str(os.getenv('API_HOST', None))
-
 
 # Celery Configuration Options
 CELERY_TIMEZONE = "Asia/Tehran"
