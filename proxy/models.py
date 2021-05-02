@@ -6,6 +6,9 @@ class KeepIt(models.Model):
     class Meta:
         ordering = ['-created_at']
 
+    def __str__(self):
+        return f'{self.status_code} {self.method} {self.url}{self.query_string}'
+
     method = models.TextField(null=True, db_index=True)
     url = models.TextField(null=True, db_index=True)
     query_string = models.TextField(null=True, db_index=True)
