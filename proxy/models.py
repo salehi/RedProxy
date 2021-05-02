@@ -7,7 +7,7 @@ class KeepIt(models.Model):
         ordering = ['-created_at']
 
     def __str__(self):
-        return f'{self.status_code} {self.method} {self.url}{self.query_string}'
+        return f'{self.status_code} {self.method} {self.url}{self.query_string} | data-> {self.data}'
 
     method = models.TextField(null=True, db_index=True)
     url = models.TextField(null=True, db_index=True)

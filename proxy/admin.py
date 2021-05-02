@@ -5,4 +5,5 @@ from proxy.models import KeepIt
 
 @admin.register(KeepIt)
 class KeepItAdmin(admin.ModelAdmin):
-    pass
+    search_fields = ['url']
+    list_filter = ['status_code']
