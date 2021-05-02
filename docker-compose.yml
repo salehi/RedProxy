@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  ngx:
+    image: nginx:alpine
+    ports:
+    - 5000:80
+    volumes:
+    - ./nginx:/etc/nginx
