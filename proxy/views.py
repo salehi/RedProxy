@@ -3,12 +3,13 @@ from django.core.handlers.wsgi import WSGIRequest
 from django.http import HttpResponse
 
 from proxy.tasks import save_to_db
+from redproxy.settings import API_HOST
 
 
 async def index(request: WSGIRequest):
     method = request.method
     scheme = 'https'
-    host = request.META['API_HOST']
+    host = API_HOST
     path = request.path
     query_string = request.META['QUERY_STRING']
     body = request.body
