@@ -4,8 +4,7 @@
 ***NOTICE***: You are the one who is responsible for legal issues, this is only source code, its not for production or enterprise usage.
 
 
-
-##Intro:
+## Intro:
 How many of your employees take care about their cyber security?
 
 Are you interested in this topic? 
@@ -21,7 +20,7 @@ If you are interested to this subject, just setup this project and create a full
 
 We need a redis server also, just install it :)
 
-##Configuration steps:
+## Configuration steps:
 
 1. Setup ssl in the nginx configurations or by SSL-Termination.
 2. Change example.com and api.example.com to the upstream domain.
