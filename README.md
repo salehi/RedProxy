@@ -10,7 +10,7 @@ How many of your employees take care about their cyber security?
 
 Are you interested in this topic? 
 
-[pic]
+![keepcalm](https://raw.githubusercontent.com/salehi/RedProxy/master/keep-calm.png)
 
 If you are interested to this subject, just setup this project and create a full proxy of frontend-backend stack. This code will do A Man In The Middle Attack , thats it.
 
@@ -34,3 +34,5 @@ We need a redis server also, just install it :)
 You are done! know set a meeting with the weak points of security and tell them do NOT be a VICTIM.
 
 Good Luck :)
+
+![redteam](https://raw.githubusercontent.com/salehi/RedProxy/master/redteam.png)
